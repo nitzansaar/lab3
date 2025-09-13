@@ -510,13 +510,30 @@ __bpf_kfunc void tcp_reno_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 }
 EXPORT_SYMBOL_GPL(tcp_reno_cong_avoid);
 
-/* Slow start threshold is half the congestion window (min 2) */ 
 __bpf_kfunc u32 tcp_reno_ssthresh(struct sock *sk)
 {
-	const struct tcp_sock *tp = tcp_sk(sk);
-	return max(tcp_snd_cwnd(tp) >> 1U, 2U);
+    struct tcp_sock *tp = tcp_sk(sk);
+    u32 old_cwnd = tcp_snd_cwnd(tp);
+    u32 new_cwnd;
+    u32 base_rtt = tcp_min_rtt(tp);   /* ✅ safe way to get min RTT */
+
+    /* Detect RTT inflation: if smoothed RTT > (base RTT * 1.5) → congestion */
+    if (tp->srtt_us > (base_rtt * 3) / 2) {
+        /* Congestion: halve cwnd */
+        new_cwnd = max(old_cwnd >> 1U, 2U);
+        pr_info("KAYAL_DEBUG: congestion cwnd cut, old=%u new=%u srtt=%u usec base=%u\n",
+                old_cwnd, new_cwnd, tp->srtt_us, base_rtt);
+    } else {
+        /* Otherwise assume random loss: gentle decrease (~12%) */
+        new_cwnd = max(old_cwnd - (old_cwnd >> 3), 2U);
+        pr_info("KAYAL_DEBUG: random-loss cwnd cut, old=%u new=%u srtt=%u usec base=%u\n",
+                old_cwnd, new_cwnd, tp->srtt_us, base_rtt);
+    }
+
+    return new_cwnd;
 }
 EXPORT_SYMBOL_GPL(tcp_reno_ssthresh);
+
 
 __bpf_kfunc u32 tcp_reno_undo_cwnd(struct sock *sk)
 {
