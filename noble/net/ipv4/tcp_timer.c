@@ -689,18 +689,18 @@ out_reset_timer:
 		 */
 		icsk->icsk_backoff++;
 
-		// EE542 - KAYAL
-		if (icsk->icsk_backoff >= 3) {
-			/* After 3 timeouts, grow gently (1.1x) instead of doubling */
-			icsk->icsk_rto = min((icsk->icsk_rto * 11) / 10, TCP_RTO_MAX);
-		} else {
-			/* Normal exponential backoff for the first couple retries */
-			icsk->icsk_rto = min(icsk->icsk_rto << 1, TCP_RTO_MAX);
-		}
-		pr_info("KAYAL_DEBUG: tcp_retransmit_timer called, RTO=%u ms, backoff=%d\n",
-		icsk->icsk_rto, icsk->icsk_backoff);
+		// // EE542 - KAYAL
+		// if (icsk->icsk_backoff >= 3) {
+		// 	/* After 3 timeouts, grow gently (1.1x) instead of doubling */
+		// 	icsk->icsk_rto = min((icsk->icsk_rto * 11) / 10, TCP_RTO_MAX);
+		// } else {
+		// 	/* Normal exponential backoff for the first couple retries */
+		// 	icsk->icsk_rto = min(icsk->icsk_rto << 1, TCP_RTO_MAX);
+		// }
+		// pr_info("KAYAL_DEBUG: tcp_retransmit_timer called, RTO=%u ms, backoff=%d\n",
+		// icsk->icsk_rto, icsk->icsk_backoff);
 
-		// icsk->icsk_rto = min(icsk->icsk_rto << 1, TCP_RTO_MAX);
+		icsk->icsk_rto = min(icsk->icsk_rto << 1, TCP_RTO_MAX);
 	}
 	inet_csk_reset_xmit_timer(sk, ICSK_TIME_RETRANS,
 				  tcp_clamp_rto_to_user_timeout(sk),

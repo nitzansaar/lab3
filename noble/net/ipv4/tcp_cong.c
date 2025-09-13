@@ -142,7 +142,8 @@ EXPORT_SYMBOL_GPL(tcp_unregister_congestion_control);
  * The new ca must have the same name as the old one, that has been
  * registered.
  */
-int tcp_update_congestion_control(struct tcp_congestion_ops *ca, struct tcp_congestion_ops *old_ca)
+int tcp_update_congestion_control(struct tcp_congestion_ops *ca,
+				  struct tcp_congestion_ops *old_ca)
 {
 	struct tcp_congestion_ops *existing;
 	int ret = 0;
@@ -151,12 +152,13 @@ int tcp_update_congestion_control(struct tcp_congestion_ops *ca, struct tcp_cong
 
 	spin_lock(&tcp_cong_list_lock);
 	existing = tcp_ca_find_key(old_ca->key);
-	if (ca->key == TCP_CA_UNSPEC || !existing || strcmp(existing->name, ca->name)) {
-		pr_notice("%s not registered or non-unique key\n",
-			  ca->name);
+	if (ca->key == TCP_CA_UNSPEC || !existing ||
+	    strcmp(existing->name, ca->name)) {
+		pr_notice("%s not registered or non-unique key\n", ca->name);
 		ret = -EINVAL;
 	} else if (existing != old_ca) {
-		pr_notice("invalid old congestion control algorithm to replace\n");
+		pr_notice(
+			"invalid old congestion control algorithm to replace\n");
 		ret = -EINVAL;
 	} else {
 		/* Add the new one before removing the old one to keep
@@ -290,7 +292,7 @@ int tcp_set_default_congestion_control(struct net *net, const char *name)
 	} else if (!bpf_try_module_get(ca, ca->owner)) {
 		ret = -EBUSY;
 	} else if (!net_eq(net, &init_net) &&
-			!(ca->flags & TCP_CONG_NON_RESTRICTED)) {
+		   !(ca->flags & TCP_CONG_NON_RESTRICTED)) {
 		/* Only init netns can set default to a restricted algorithm */
 		ret = -EPERM;
 	} else {
@@ -322,8 +324,7 @@ void tcp_get_available_congestion_control(char *buf, size_t maxlen)
 
 	rcu_read_lock();
 	list_for_each_entry_rcu(ca, &tcp_cong_list, list) {
-		offs += snprintf(buf + offs, maxlen - offs,
-				 "%s%s",
+		offs += snprintf(buf + offs, maxlen - offs, "%s%s",
 				 offs == 0 ? "" : " ", ca->name);
 
 		if (WARN_ON_ONCE(offs >= maxlen))
@@ -354,8 +355,7 @@ void tcp_get_allowed_congestion_control(char *buf, size_t maxlen)
 	list_for_each_entry_rcu(ca, &tcp_cong_list, list) {
 		if (!(ca->flags & TCP_CONG_NON_RESTRICTED))
 			continue;
-		offs += snprintf(buf + offs, maxlen - offs,
-				 "%s%s",
+		offs += snprintf(buf + offs, maxlen - offs, "%s%s",
 				 offs == 0 ? "" : " ", ca->name);
 
 		if (WARN_ON_ONCE(offs >= maxlen))
@@ -438,7 +438,7 @@ int tcp_set_congestion_control(struct sock *sk, const char *name, bool load,
 		err = -EBUSY;
 	else
 		tcp_reinit_congestion_control(sk, ca);
- out:
+out:
 	rcu_read_unlock();
 	return err;
 }
@@ -510,30 +510,13 @@ __bpf_kfunc void tcp_reno_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 }
 EXPORT_SYMBOL_GPL(tcp_reno_cong_avoid);
 
+/* Slow start threshold is half the congestion window (min 2) */ 
 __bpf_kfunc u32 tcp_reno_ssthresh(struct sock *sk)
 {
-    struct tcp_sock *tp = tcp_sk(sk);
-    u32 old_cwnd = tcp_snd_cwnd(tp);
-    u32 new_cwnd;
-    u32 base_rtt = tcp_min_rtt(tp);   /* ✅ safe way to get min RTT */
-
-    /* Detect RTT inflation: if smoothed RTT > (base RTT * 1.5) → congestion */
-    if (tp->srtt_us > (base_rtt * 3) / 2) {
-        /* Congestion: halve cwnd */
-        new_cwnd = max(old_cwnd >> 1U, 2U);
-        pr_info("KAYAL_DEBUG: congestion cwnd cut, old=%u new=%u srtt=%u usec base=%u\n",
-                old_cwnd, new_cwnd, tp->srtt_us, base_rtt);
-    } else {
-        /* Otherwise assume random loss: gentle decrease (~12%) */
-        new_cwnd = max(old_cwnd - (old_cwnd >> 3), 2U);
-        pr_info("KAYAL_DEBUG: random-loss cwnd cut, old=%u new=%u srtt=%u usec base=%u\n",
-                old_cwnd, new_cwnd, tp->srtt_us, base_rtt);
-    }
-
-    return new_cwnd;
+	const struct tcp_sock *tp = tcp_sk(sk);
+	return max(tcp_snd_cwnd(tp) >> 1U, 2U);
 }
 EXPORT_SYMBOL_GPL(tcp_reno_ssthresh);
-
 
 __bpf_kfunc u32 tcp_reno_undo_cwnd(struct sock *sk)
 {
@@ -544,10 +527,10 @@ __bpf_kfunc u32 tcp_reno_undo_cwnd(struct sock *sk)
 EXPORT_SYMBOL_GPL(tcp_reno_undo_cwnd);
 
 struct tcp_congestion_ops tcp_reno = {
-	.flags		= TCP_CONG_NON_RESTRICTED,
-	.name		= "reno",
-	.owner		= THIS_MODULE,
-	.ssthresh	= tcp_reno_ssthresh,
-	.cong_avoid	= tcp_reno_cong_avoid,
-	.undo_cwnd	= tcp_reno_undo_cwnd,
+	.flags = TCP_CONG_NON_RESTRICTED,
+	.name = "reno",
+	.owner = THIS_MODULE,
+	.ssthresh = tcp_reno_ssthresh,
+	.cong_avoid = tcp_reno_cong_avoid,
+	.undo_cwnd = tcp_reno_undo_cwnd,
 };
