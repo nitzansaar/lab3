@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/iio/addac/modules.order := {   echo drivers/staging/iio/addac/adt7316.o;   echo drivers/staging/iio/addac/adt7316-spi.o;   echo drivers/staging/iio/addac/adt7316-i2c.o; :; } > drivers/staging/iio/addac/modules.order

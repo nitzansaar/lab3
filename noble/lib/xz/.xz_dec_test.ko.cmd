@@ -1,0 +1,1 @@
+savedcmd_lib/xz/xz_dec_test.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o lib/xz/xz_dec_test.ko lib/xz/xz_dec_test.o lib/xz/xz_dec_test.mod.o .module-common.o

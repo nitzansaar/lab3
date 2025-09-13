@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/common/usb-conn-gpio.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/usb/common/usb-conn-gpio.ko drivers/usb/common/usb-conn-gpio.o drivers/usb/common/usb-conn-gpio.mod.o .module-common.o

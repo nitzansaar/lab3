@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/rgb/modules.order := {   echo drivers/leds/rgb/leds-ktd202x.o;   echo drivers/leds/rgb/leds-pwm-multicolor.o;   echo drivers/leds/rgb/leds-mt6370-rgb.o; :; } > drivers/leds/rgb/modules.order

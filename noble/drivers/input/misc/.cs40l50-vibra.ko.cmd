@@ -1,0 +1,1 @@
+savedcmd_drivers/input/misc/cs40l50-vibra.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/misc/cs40l50-vibra.ko drivers/input/misc/cs40l50-vibra.o drivers/input/misc/cs40l50-vibra.mod.o .module-common.o

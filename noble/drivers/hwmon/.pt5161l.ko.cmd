@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/pt5161l.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/pt5161l.ko drivers/hwmon/pt5161l.o drivers/hwmon/pt5161l.mod.o .module-common.o

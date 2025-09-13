@@ -1,0 +1,1 @@
+savedcmd_drivers/i2c/muxes/i2c-mux-pca954x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/i2c/muxes/i2c-mux-pca954x.ko drivers/i2c/muxes/i2c-mux-pca954x.o drivers/i2c/muxes/i2c-mux-pca954x.mod.o .module-common.o

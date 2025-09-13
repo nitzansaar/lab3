@@ -1,0 +1,1 @@
+savedcmd_drivers/hid/intel-thc-hid/modules.order := {   echo drivers/hid/intel-thc-hid/intel-thc.o;   echo drivers/hid/intel-thc-hid/intel-quickspi.o;   echo drivers/hid/intel-thc-hid/intel-quicki2c.o; :; } > drivers/hid/intel-thc-hid/modules.order

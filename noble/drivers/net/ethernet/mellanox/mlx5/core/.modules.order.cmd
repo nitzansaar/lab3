@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/mellanox/mlx5/core/modules.order := {   echo drivers/net/ethernet/mellanox/mlx5/core/mlx5_core.o;   echo drivers/net/ethernet/mellanox/mlx5/core/mlx5_dpll.o; :; } > drivers/net/ethernet/mellanox/mlx5/core/modules.order

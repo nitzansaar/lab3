@@ -1,0 +1,1 @@
+savedcmd_drivers/input/keyboard/dlink-dir685-touchkeys.mod := printf '%s\n'   dlink-dir685-touchkeys.o | awk '!x[$$0]++ { print("drivers/input/keyboard/"$$0) }' > drivers/input/keyboard/dlink-dir685-touchkeys.mod

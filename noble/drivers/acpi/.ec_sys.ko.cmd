@@ -1,0 +1,1 @@
+savedcmd_drivers/acpi/ec_sys.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/acpi/ec_sys.ko drivers/acpi/ec_sys.o drivers/acpi/ec_sys.mod.o .module-common.o

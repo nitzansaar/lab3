@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/ulp/rtrs/rtrs-server.mod := printf '%s\n'   rtrs-srv.o rtrs-srv-stats.o rtrs-srv-sysfs.o rtrs-srv-trace.o | awk '!x[$$0]++ { print("drivers/infiniband/ulp/rtrs/"$$0) }' > drivers/infiniband/ulp/rtrs/rtrs-server.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/w1/slaves/w1_ds250x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/w1/slaves/w1_ds250x.ko drivers/w1/slaves/w1_ds250x.o drivers/w1/slaves/w1_ds250x.mod.o .module-common.o

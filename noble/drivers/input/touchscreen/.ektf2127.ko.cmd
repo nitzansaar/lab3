@@ -1,0 +1,1 @@
+savedcmd_drivers/input/touchscreen/ektf2127.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/touchscreen/ektf2127.ko drivers/input/touchscreen/ektf2127.o drivers/input/touchscreen/ektf2127.mod.o .module-common.o

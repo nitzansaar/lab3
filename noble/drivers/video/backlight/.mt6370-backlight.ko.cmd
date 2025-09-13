@@ -1,0 +1,1 @@
+savedcmd_drivers/video/backlight/mt6370-backlight.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/video/backlight/mt6370-backlight.ko drivers/video/backlight/mt6370-backlight.o drivers/video/backlight/mt6370-backlight.mod.o .module-common.o

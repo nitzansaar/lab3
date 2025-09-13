@@ -1,0 +1,1 @@
+savedcmd_drivers/net/phy/microchip_t1s.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/phy/microchip_t1s.ko drivers/net/phy/microchip_t1s.o drivers/net/phy/microchip_t1s.mod.o .module-common.o

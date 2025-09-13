@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/humidity/hdc3020.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/humidity/hdc3020.ko drivers/iio/humidity/hdc3020.o drivers/iio/humidity/hdc3020.mod.o .module-common.o

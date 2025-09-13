@@ -1,0 +1,1 @@
+savedcmd_drivers/misc/ntsync.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/misc/ntsync.ko drivers/misc/ntsync.o drivers/misc/ntsync.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/realtek/rtase/rtase.mod := printf '%s\n'   rtase_main.o | awk '!x[$$0]++ { print("drivers/net/ethernet/realtek/rtase/"$$0) }' > drivers/net/ethernet/realtek/rtase/rtase.mod

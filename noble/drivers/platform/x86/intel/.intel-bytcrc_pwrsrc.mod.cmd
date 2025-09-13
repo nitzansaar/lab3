@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/intel/intel-bytcrc_pwrsrc.mod := printf '%s\n'   bytcrc_pwrsrc.o | awk '!x[$$0]++ { print("drivers/platform/x86/intel/"$$0) }' > drivers/platform/x86/intel/intel-bytcrc_pwrsrc.mod

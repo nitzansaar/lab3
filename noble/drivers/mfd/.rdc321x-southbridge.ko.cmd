@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/rdc321x-southbridge.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/rdc321x-southbridge.ko drivers/mfd/rdc321x-southbridge.o drivers/mfd/rdc321x-southbridge.mod.o .module-common.o

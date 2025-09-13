@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/c6xdigio.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/comedi/drivers/c6xdigio.ko drivers/comedi/drivers/c6xdigio.o drivers/comedi/drivers/c6xdigio.mod.o .module-common.o

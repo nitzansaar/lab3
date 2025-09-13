@@ -1,0 +1,1 @@
+savedcmd_drivers/net/mdio/mdio-cavium.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/mdio/mdio-cavium.ko drivers/net/mdio/mdio-cavium.o drivers/net/mdio/mdio-cavium.mod.o .module-common.o

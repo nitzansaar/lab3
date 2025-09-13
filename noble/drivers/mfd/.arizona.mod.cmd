@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/arizona.mod := printf '%s\n'   arizona-core.o arizona-irq.o wm5102-tables.o wm5110-tables.o wm8997-tables.o wm8998-tables.o cs47l24-tables.o | awk '!x[$$0]++ { print("drivers/mfd/"$$0) }' > drivers/mfd/arizona.mod

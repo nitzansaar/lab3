@@ -1,0 +1,1 @@
+savedcmd_drivers/watchdog/da9055_wdt.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/watchdog/da9055_wdt.ko drivers/watchdog/da9055_wdt.o drivers/watchdog/da9055_wdt.mod.o .module-common.o

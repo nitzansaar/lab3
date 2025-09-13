@@ -1,0 +1,1 @@
+savedcmd_drivers/rapidio/devices/tsi721_mport.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/rapidio/devices/tsi721_mport.ko drivers/rapidio/devices/tsi721_mport.o drivers/rapidio/devices/tsi721_mport.mod.o .module-common.o

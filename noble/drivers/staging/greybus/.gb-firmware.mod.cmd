@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/greybus/gb-firmware.mod := printf '%s\n'   fw-core.o fw-download.o fw-management.o authentication.o | awk '!x[$$0]++ { print("drivers/staging/greybus/"$$0) }' > drivers/staging/greybus/gb-firmware.mod

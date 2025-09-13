@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/ni/nixge.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/ethernet/ni/nixge.ko drivers/net/ethernet/ni/nixge.o drivers/net/ethernet/ni/nixge.mod.o .module-common.o

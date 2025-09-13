@@ -1,0 +1,1 @@
+savedcmd_drivers/hid/hid-hyperv.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hid/hid-hyperv.ko drivers/hid/hid-hyperv.o drivers/hid/hid-hyperv.mod.o .module-common.o

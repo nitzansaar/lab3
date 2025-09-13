@@ -1,0 +1,1 @@
+savedcmd_netfilter/nft_reject_ipv4.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o netfilter/nft_reject_ipv4.ko netfilter/nft_reject_ipv4.o netfilter/nft_reject_ipv4.mod.o .module-common.o

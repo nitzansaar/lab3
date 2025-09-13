@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/userspace-consumer.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/userspace-consumer.ko drivers/regulator/userspace-consumer.o drivers/regulator/userspace-consumer.mod.o .module-common.o

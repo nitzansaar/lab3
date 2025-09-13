@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/marvell/octeon_ep_vf/octeon_ep_vf.mod := printf '%s\n'   octep_vf_main.o octep_vf_cn9k.o octep_vf_cnxk.o octep_vf_tx.o octep_vf_rx.o octep_vf_mbox.o octep_vf_ethtool.o | awk '!x[$$0]++ { print("drivers/net/ethernet/marvell/octeon_ep_vf/"$$0) }' > drivers/net/ethernet/marvell/octeon_ep_vf/octeon_ep_vf.mod

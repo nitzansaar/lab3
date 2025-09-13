@@ -1,0 +1,1 @@
+savedcmd_drivers/ufs/host/modules.order := {   echo drivers/ufs/host/tc-dwc-g210-pci.o;   echo drivers/ufs/host/ufshcd-dwc.o;   echo drivers/ufs/host/tc-dwc-g210.o;   echo drivers/ufs/host/cdns-pltfrm.o;   echo drivers/ufs/host/ufshcd-pci.o;   echo drivers/ufs/host/ufshcd-pltfrm.o; :; } > drivers/ufs/host/modules.order

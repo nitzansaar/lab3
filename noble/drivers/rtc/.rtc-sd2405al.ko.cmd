@@ -1,0 +1,1 @@
+savedcmd_drivers/rtc/rtc-sd2405al.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/rtc/rtc-sd2405al.ko drivers/rtc/rtc-sd2405al.o drivers/rtc/rtc-sd2405al.mod.o .module-common.o

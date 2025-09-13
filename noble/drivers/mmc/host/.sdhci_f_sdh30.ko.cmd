@@ -1,0 +1,1 @@
+savedcmd_drivers/mmc/host/sdhci_f_sdh30.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mmc/host/sdhci_f_sdh30.ko drivers/mmc/host/sdhci_f_sdh30.o drivers/mmc/host/sdhci_f_sdh30.mod.o .module-common.o

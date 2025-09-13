@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/greybus/gb-loopback.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/greybus/gb-loopback.ko drivers/staging/greybus/gb-loopback.o drivers/staging/greybus/gb-loopback.mod.o .module-common.o

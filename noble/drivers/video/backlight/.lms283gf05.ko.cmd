@@ -1,0 +1,1 @@
+savedcmd_drivers/video/backlight/lms283gf05.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/video/backlight/lms283gf05.ko drivers/video/backlight/lms283gf05.o drivers/video/backlight/lms283gf05.mod.o .module-common.o

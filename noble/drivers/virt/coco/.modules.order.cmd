@@ -1,0 +1,1 @@
+savedcmd_drivers/virt/coco/modules.order := {   cat drivers/virt/coco/tdx-guest/modules.order;   echo drivers/virt/coco/tsm.o;   cat drivers/virt/coco/efi_secret/modules.order;   cat drivers/virt/coco/sev-guest/modules.order; :; } > drivers/virt/coco/modules.order

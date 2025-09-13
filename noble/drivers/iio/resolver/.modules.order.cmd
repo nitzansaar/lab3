@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/resolver/modules.order := {   echo drivers/iio/resolver/ad2s90.o;   echo drivers/iio/resolver/ad2s1200.o;   echo drivers/iio/resolver/ad2s1210.o; :; } > drivers/iio/resolver/modules.order

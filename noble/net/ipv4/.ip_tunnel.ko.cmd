@@ -1,0 +1,1 @@
+savedcmd_ip_tunnel.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o ip_tunnel.ko ip_tunnel.o ip_tunnel.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/resolver/ad2s1210.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/resolver/ad2s1210.ko drivers/iio/resolver/ad2s1210.o drivers/iio/resolver/ad2s1210.mod.o .module-common.o

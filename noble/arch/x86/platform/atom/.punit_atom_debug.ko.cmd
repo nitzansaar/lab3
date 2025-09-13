@@ -1,0 +1,1 @@
+savedcmd_arch/x86/platform/atom/punit_atom_debug.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o arch/x86/platform/atom/punit_atom_debug.ko arch/x86/platform/atom/punit_atom_debug.o arch/x86/platform/atom/punit_atom_debug.mod.o .module-common.o

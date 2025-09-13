@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/smpro-hwmon.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/smpro-hwmon.ko drivers/hwmon/smpro-hwmon.o drivers/hwmon/smpro-hwmon.mod.o .module-common.o

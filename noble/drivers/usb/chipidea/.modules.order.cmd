@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/chipidea/modules.order := {   echo drivers/usb/chipidea/ci_hdrc.o;   echo drivers/usb/chipidea/ci_hdrc_usb2.o;   echo drivers/usb/chipidea/ci_hdrc_msm.o;   echo drivers/usb/chipidea/ci_hdrc_npcm.o;   echo drivers/usb/chipidea/ci_hdrc_pci.o; :; } > drivers/usb/chipidea/modules.order

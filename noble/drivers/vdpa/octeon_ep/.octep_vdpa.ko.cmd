@@ -1,0 +1,1 @@
+savedcmd_drivers/vdpa/octeon_ep/octep_vdpa.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/vdpa/octeon_ep/octep_vdpa.ko drivers/vdpa/octeon_ep/octep_vdpa.o drivers/vdpa/octeon_ep/octep_vdpa.mod.o .module-common.o

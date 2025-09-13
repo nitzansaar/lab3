@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/light/rohm-bu27034.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/light/rohm-bu27034.ko drivers/iio/light/rohm-bu27034.o drivers/iio/light/rohm-bu27034.mod.o .module-common.o

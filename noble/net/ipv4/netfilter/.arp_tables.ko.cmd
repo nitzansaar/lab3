@@ -1,0 +1,1 @@
+savedcmd_netfilter/arp_tables.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o netfilter/arp_tables.ko netfilter/arp_tables.o netfilter/arp_tables.mod.o .module-common.o

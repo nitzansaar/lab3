@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/simple/modules.order := {   echo drivers/leds/simple/simatic-ipc-leds.o;   echo drivers/leds/simple/simatic-ipc-leds-gpio-core.o;   echo drivers/leds/simple/simatic-ipc-leds-gpio-apollolake.o;   echo drivers/leds/simple/simatic-ipc-leds-gpio-f7188x.o;   echo drivers/leds/simple/simatic-ipc-leds-gpio-elkhartlake.o; :; } > drivers/leds/simple/modules.order

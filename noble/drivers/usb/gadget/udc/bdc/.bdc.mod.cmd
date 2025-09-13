@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/gadget/udc/bdc/bdc.mod := printf '%s\n'   bdc_core.o bdc_cmd.o bdc_ep.o bdc_udc.o | awk '!x[$$0]++ { print("drivers/usb/gadget/udc/bdc/"$$0) }' > drivers/usb/gadget/udc/bdc/bdc.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/rpmsg/modules.order := {   echo drivers/rpmsg/rpmsg_core.o;   echo drivers/rpmsg/rpmsg_char.o;   echo drivers/rpmsg/rpmsg_ctrl.o;   echo drivers/rpmsg/rpmsg_ns.o;   echo drivers/rpmsg/qcom_glink.o;   echo drivers/rpmsg/qcom_glink_rpm.o;   echo drivers/rpmsg/virtio_rpmsg_bus.o; :; } > drivers/rpmsg/modules.order

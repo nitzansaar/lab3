@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/proximity/as3935.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/proximity/as3935.ko drivers/iio/proximity/as3935.o drivers/iio/proximity/as3935.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/amplifiers/ad8366.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/amplifiers/ad8366.ko drivers/iio/amplifiers/ad8366.o drivers/iio/amplifiers/ad8366.mod.o .module-common.o

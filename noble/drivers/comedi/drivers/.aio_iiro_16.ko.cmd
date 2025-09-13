@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/aio_iiro_16.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/comedi/drivers/aio_iiro_16.ko drivers/comedi/drivers/aio_iiro_16.o drivers/comedi/drivers/aio_iiro_16.mod.o .module-common.o

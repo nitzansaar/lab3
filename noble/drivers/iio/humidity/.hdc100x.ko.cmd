@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/humidity/hdc100x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/humidity/hdc100x.ko drivers/iio/humidity/hdc100x.o drivers/iio/humidity/hdc100x.mod.o .module-common.o

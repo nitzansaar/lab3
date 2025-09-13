@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/common/ssp_sensors/modules.order := {   echo drivers/iio/common/ssp_sensors/sensorhub.o;   echo drivers/iio/common/ssp_sensors/ssp_iio.o; :; } > drivers/iio/common/ssp_sensors/modules.order

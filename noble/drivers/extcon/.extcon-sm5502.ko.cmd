@@ -1,0 +1,1 @@
+savedcmd_drivers/extcon/extcon-sm5502.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/extcon/extcon-sm5502.ko drivers/extcon/extcon-sm5502.o drivers/extcon/extcon-sm5502.mod.o .module-common.o

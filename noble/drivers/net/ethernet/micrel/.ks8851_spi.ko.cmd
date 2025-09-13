@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/micrel/ks8851_spi.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/ethernet/micrel/ks8851_spi.ko drivers/net/ethernet/micrel/ks8851_spi.o drivers/net/ethernet/micrel/ks8851_spi.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/phy/ti/phy-tusb1210.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/phy/ti/phy-tusb1210.ko drivers/phy/ti/phy-tusb1210.o drivers/phy/ti/phy-tusb1210.mod.o .module-common.o

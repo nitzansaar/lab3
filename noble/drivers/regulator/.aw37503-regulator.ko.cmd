@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/aw37503-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/aw37503-regulator.ko drivers/regulator/aw37503-regulator.o drivers/regulator/aw37503-regulator.mod.o .module-common.o

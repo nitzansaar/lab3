@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/mc13783-adc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/mc13783-adc.ko drivers/hwmon/mc13783-adc.o drivers/hwmon/mc13783-adc.mod.o .module-common.o

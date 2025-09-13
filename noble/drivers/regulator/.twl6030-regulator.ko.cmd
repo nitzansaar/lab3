@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/twl6030-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/twl6030-regulator.ko drivers/regulator/twl6030-regulator.o drivers/regulator/twl6030-regulator.mod.o .module-common.o

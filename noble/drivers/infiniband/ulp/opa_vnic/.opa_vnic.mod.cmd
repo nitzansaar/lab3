@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/ulp/opa_vnic/opa_vnic.mod := printf '%s\n'   opa_vnic_netdev.o opa_vnic_encap.o opa_vnic_ethtool.o opa_vnic_vema.o opa_vnic_vema_iface.o | awk '!x[$$0]++ { print("drivers/infiniband/ulp/opa_vnic/"$$0) }' > drivers/infiniband/ulp/opa_vnic/opa_vnic.mod

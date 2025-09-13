@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/imu/bmi270/modules.order := {   echo drivers/iio/imu/bmi270/bmi270_core.o;   echo drivers/iio/imu/bmi270/bmi270_i2c.o;   echo drivers/iio/imu/bmi270/bmi270_spi.o; :; } > drivers/iio/imu/bmi270/modules.order

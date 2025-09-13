@@ -1,0 +1,1 @@
+savedcmd_drivers/net/mdio/mdio-thunder.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/mdio/mdio-thunder.ko drivers/net/mdio/mdio-thunder.o drivers/net/mdio/mdio-thunder.mod.o .module-common.o

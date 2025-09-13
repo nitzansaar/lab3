@@ -1,0 +1,1 @@
+savedcmd_drivers/cpuidle/cpuidle-haltpoll.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/cpuidle/cpuidle-haltpoll.ko drivers/cpuidle/cpuidle-haltpoll.o drivers/cpuidle/cpuidle-haltpoll.mod.o .module-common.o

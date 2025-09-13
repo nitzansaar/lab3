@@ -1,0 +1,1 @@
+savedcmd_netfilter/iptable_mangle.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o netfilter/iptable_mangle.ko netfilter/iptable_mangle.o netfilter/iptable_mangle.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/accel/ssp_accel_sensor.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/accel/ssp_accel_sensor.ko drivers/iio/accel/ssp_accel_sensor.o drivers/iio/accel/ssp_accel_sensor.mod.o .module-common.o

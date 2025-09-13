@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/asus_rog_ryujin.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/asus_rog_ryujin.ko drivers/hwmon/asus_rog_ryujin.o drivers/hwmon/asus_rog_ryujin.mod.o .module-common.o

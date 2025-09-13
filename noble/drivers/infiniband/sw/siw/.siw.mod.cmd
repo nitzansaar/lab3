@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/sw/siw/siw.mod := printf '%s\n'   siw_cm.o siw_cq.o siw_main.o siw_mem.o siw_qp.o siw_qp_tx.o siw_qp_rx.o siw_verbs.o | awk '!x[$$0]++ { print("drivers/infiniband/sw/siw/"$$0) }' > drivers/infiniband/sw/siw/siw.mod

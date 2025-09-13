@@ -1,0 +1,1 @@
+savedcmd_drivers/video/backlight/sky81452-backlight.mod := printf '%s\n'   sky81452-backlight.o | awk '!x[$$0]++ { print("drivers/video/backlight/"$$0) }' > drivers/video/backlight/sky81452-backlight.mod

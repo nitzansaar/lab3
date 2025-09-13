@@ -1,0 +1,1 @@
+savedcmd_drivers/rapidio/switches/modules.order := {   echo drivers/rapidio/switches/idtcps.o;   echo drivers/rapidio/switches/idt_gen2.o;   echo drivers/rapidio/switches/idt_gen3.o; :; } > drivers/rapidio/switches/modules.order

@@ -1,0 +1,1 @@
+savedcmd_drivers/accel/amdxdna/amdxdna.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/accel/amdxdna/amdxdna.ko drivers/accel/amdxdna/amdxdna.o drivers/accel/amdxdna/amdxdna.mod.o .module-common.o

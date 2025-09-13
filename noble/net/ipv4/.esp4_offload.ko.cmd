@@ -1,0 +1,1 @@
+savedcmd_esp4_offload.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o esp4_offload.ko esp4_offload.o esp4_offload.mod.o .module-common.o

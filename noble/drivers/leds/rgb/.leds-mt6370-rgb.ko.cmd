@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/rgb/leds-mt6370-rgb.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/leds/rgb/leds-mt6370-rgb.ko drivers/leds/rgb/leds-mt6370-rgb.o drivers/leds/rgb/leds-mt6370-rgb.mod.o .module-common.o

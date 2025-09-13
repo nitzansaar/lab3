@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/88pm800-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/88pm800-regulator.ko drivers/regulator/88pm800-regulator.o drivers/regulator/88pm800-regulator.mod.o .module-common.o

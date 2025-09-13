@@ -1,0 +1,1 @@
+savedcmd_drivers/net/wireless/virtual/virt_wifi.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/wireless/virtual/virt_wifi.ko drivers/net/wireless/virtual/virt_wifi.o drivers/net/wireless/virtual/virt_wifi.mod.o .module-common.o

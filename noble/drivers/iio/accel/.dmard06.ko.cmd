@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/accel/dmard06.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/accel/dmard06.ko drivers/iio/accel/dmard06.o drivers/iio/accel/dmard06.mod.o .module-common.o

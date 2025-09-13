@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/sm750fb/sm750fb.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/sm750fb/sm750fb.ko drivers/staging/sm750fb/sm750fb.o drivers/staging/sm750fb/sm750fb.mod.o .module-common.o

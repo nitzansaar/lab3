@@ -1,0 +1,1 @@
+savedcmd_drivers/pci/endpoint/functions/pci-epf-ntb.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/pci/endpoint/functions/pci-epf-ntb.ko drivers/pci/endpoint/functions/pci-epf-ntb.o drivers/pci/endpoint/functions/pci-epf-ntb.mod.o .module-common.o

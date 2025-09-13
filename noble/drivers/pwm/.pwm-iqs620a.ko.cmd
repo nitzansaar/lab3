@@ -1,0 +1,1 @@
+savedcmd_drivers/pwm/pwm-iqs620a.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/pwm/pwm-iqs620a.ko drivers/pwm/pwm-iqs620a.o drivers/pwm/pwm-iqs620a.mod.o .module-common.o

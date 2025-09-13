@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/xilinx/xilinx_emac.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/ethernet/xilinx/xilinx_emac.ko drivers/net/ethernet/xilinx/xilinx_emac.o drivers/net/ethernet/xilinx/xilinx_emac.mod.o .module-common.o

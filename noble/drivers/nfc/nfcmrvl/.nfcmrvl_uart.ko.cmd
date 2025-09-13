@@ -1,0 +1,1 @@
+savedcmd_drivers/nfc/nfcmrvl/nfcmrvl_uart.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/nfc/nfcmrvl/nfcmrvl_uart.ko drivers/nfc/nfcmrvl/nfcmrvl_uart.o drivers/nfc/nfcmrvl/nfcmrvl_uart.mod.o .module-common.o

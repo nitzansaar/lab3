@@ -1,0 +1,1 @@
+savedcmd_drivers/hid/usbhid/usbmouse.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hid/usbhid/usbmouse.ko drivers/hid/usbhid/usbmouse.o drivers/hid/usbhid/usbmouse.mod.o .module-common.o

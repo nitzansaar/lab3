@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/mellanox/mlxreg-io.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/platform/mellanox/mlxreg-io.ko drivers/platform/mellanox/mlxreg-io.o drivers/platform/mellanox/mlxreg-io.mod.o .module-common.o

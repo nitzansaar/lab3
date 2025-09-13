@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-i8255.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-i8255.ko drivers/gpio/gpio-i8255.o drivers/gpio/gpio-i8255.mod.o .module-common.o

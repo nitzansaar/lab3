@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/hw/erdma/erdma.mod := printf '%s\n'   erdma_cm.o erdma_main.o erdma_cmdq.o erdma_cq.o erdma_verbs.o erdma_qp.o erdma_eq.o | awk '!x[$$0]++ { print("drivers/infiniband/hw/erdma/"$$0) }' > drivers/infiniband/hw/erdma/erdma.mod

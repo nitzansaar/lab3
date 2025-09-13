@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/dac/ad3552r-common.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/dac/ad3552r-common.ko drivers/iio/dac/ad3552r-common.o drivers/iio/dac/ad3552r-common.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/hw/mana/mana_ib.mod := printf '%s\n'   device.o main.o wq.o qp.o cq.o mr.o | awk '!x[$$0]++ { print("drivers/infiniband/hw/mana/"$$0) }' > drivers/infiniband/hw/mana/mana_ib.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/input/misc/twl4030-pwrbutton.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/misc/twl4030-pwrbutton.ko drivers/input/misc/twl4030-pwrbutton.o drivers/input/misc/twl4030-pwrbutton.mod.o .module-common.o

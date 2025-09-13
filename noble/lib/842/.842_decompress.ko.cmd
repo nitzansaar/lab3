@@ -1,0 +1,1 @@
+savedcmd_lib/842/842_decompress.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o lib/842/842_decompress.ko lib/842/842_decompress.o lib/842/842_decompress.mod.o .module-common.o

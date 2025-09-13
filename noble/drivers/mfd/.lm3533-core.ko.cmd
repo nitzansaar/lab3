@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/lm3533-core.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/lm3533-core.ko drivers/mfd/lm3533-core.o drivers/mfd/lm3533-core.mod.o .module-common.o

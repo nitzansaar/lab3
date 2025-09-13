@@ -1,0 +1,1 @@
+savedcmd_drivers/peci/peci-cpu.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/peci/peci-cpu.ko drivers/peci/peci-cpu.o drivers/peci/peci-cpu.mod.o .module-common.o

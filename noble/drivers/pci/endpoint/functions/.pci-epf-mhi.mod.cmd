@@ -1,0 +1,1 @@
+savedcmd_drivers/pci/endpoint/functions/pci-epf-mhi.mod := printf '%s\n'   pci-epf-mhi.o | awk '!x[$$0]++ { print("drivers/pci/endpoint/functions/"$$0) }' > drivers/pci/endpoint/functions/pci-epf-mhi.mod

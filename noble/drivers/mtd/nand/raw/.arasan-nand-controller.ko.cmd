@@ -1,0 +1,1 @@
+savedcmd_drivers/mtd/nand/raw/arasan-nand-controller.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mtd/nand/raw/arasan-nand-controller.ko drivers/mtd/nand/raw/arasan-nand-controller.o drivers/mtd/nand/raw/arasan-nand-controller.mod.o .module-common.o

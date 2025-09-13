@@ -1,0 +1,1 @@
+savedcmd_drivers/accel/qaic/qaic.mod := printf '%s\n'   mhi_controller.o qaic_control.o qaic_data.o qaic_drv.o qaic_timesync.o sahara.o qaic_debugfs.o | awk '!x[$$0]++ { print("drivers/accel/qaic/"$$0) }' > drivers/accel/qaic/qaic.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/power/supply/sbs-manager.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/power/supply/sbs-manager.ko drivers/power/supply/sbs-manager.o drivers/power/supply/sbs-manager.mod.o .module-common.o

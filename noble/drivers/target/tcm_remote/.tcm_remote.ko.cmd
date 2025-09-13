@@ -1,0 +1,1 @@
+savedcmd_drivers/target/tcm_remote/tcm_remote.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/target/tcm_remote/tcm_remote.ko drivers/target/tcm_remote/tcm_remote.o drivers/target/tcm_remote/tcm_remote.mod.o .module-common.o

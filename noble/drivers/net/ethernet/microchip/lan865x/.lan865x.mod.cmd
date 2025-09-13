@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/microchip/lan865x/lan865x.mod := printf '%s\n'   lan865x.o | awk '!x[$$0]++ { print("drivers/net/ethernet/microchip/lan865x/"$$0) }' > drivers/net/ethernet/microchip/lan865x/lan865x.mod

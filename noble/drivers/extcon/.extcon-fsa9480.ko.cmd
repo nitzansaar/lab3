@@ -1,0 +1,1 @@
+savedcmd_drivers/extcon/extcon-fsa9480.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/extcon/extcon-fsa9480.ko drivers/extcon/extcon-fsa9480.o drivers/extcon/extcon-fsa9480.mod.o .module-common.o

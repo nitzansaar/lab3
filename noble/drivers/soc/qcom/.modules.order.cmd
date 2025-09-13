@@ -1,0 +1,1 @@
+savedcmd_drivers/soc/qcom/modules.order := {   echo drivers/soc/qcom/pmic_pdcharger_ulog.o;   echo drivers/soc/qcom/qmi_helpers.o;   echo drivers/soc/qcom/qcom-pbs.o; :; } > drivers/soc/qcom/modules.order

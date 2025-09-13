@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/pwm-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/pwm-regulator.ko drivers/regulator/pwm-regulator.o drivers/regulator/pwm-regulator.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/iio/frequency/ad9832.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/iio/frequency/ad9832.ko drivers/staging/iio/frequency/ad9832.o drivers/staging/iio/frequency/ad9832.mod.o .module-common.o

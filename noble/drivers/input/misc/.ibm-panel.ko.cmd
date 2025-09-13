@@ -1,0 +1,1 @@
+savedcmd_drivers/input/misc/ibm-panel.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/misc/ibm-panel.ko drivers/input/misc/ibm-panel.o drivers/input/misc/ibm-panel.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_netfilter/ip_tables.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o netfilter/ip_tables.ko netfilter/ip_tables.o netfilter/ip_tables.mod.o .module-common.o

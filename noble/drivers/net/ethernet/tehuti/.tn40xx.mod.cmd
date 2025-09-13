@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/tehuti/tn40xx.mod := printf '%s\n'   tn40.o tn40_mdio.o tn40_phy.o | awk '!x[$$0]++ { print("drivers/net/ethernet/tehuti/"$$0) }' > drivers/net/ethernet/tehuti/tn40xx.mod

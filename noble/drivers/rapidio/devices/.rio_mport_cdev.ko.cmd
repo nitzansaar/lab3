@@ -1,0 +1,1 @@
+savedcmd_drivers/rapidio/devices/rio_mport_cdev.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/rapidio/devices/rio_mport_cdev.ko drivers/rapidio/devices/rio_mport_cdev.o drivers/rapidio/devices/rio_mport_cdev.mod.o .module-common.o

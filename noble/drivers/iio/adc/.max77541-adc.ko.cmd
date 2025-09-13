@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/adc/max77541-adc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/adc/max77541-adc.ko drivers/iio/adc/max77541-adc.o drivers/iio/adc/max77541-adc.mod.o .module-common.o

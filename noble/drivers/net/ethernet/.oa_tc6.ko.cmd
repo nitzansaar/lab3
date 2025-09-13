@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/oa_tc6.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/ethernet/oa_tc6.ko drivers/net/ethernet/oa_tc6.o drivers/net/ethernet/oa_tc6.mod.o .module-common.o

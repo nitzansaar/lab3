@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/mlxreg-fan.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/mlxreg-fan.ko drivers/hwmon/mlxreg-fan.o drivers/hwmon/mlxreg-fan.mod.o .module-common.o

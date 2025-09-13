@@ -1,0 +1,1 @@
+savedcmd_drivers/nfc/st95hf/st95hf.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/nfc/st95hf/st95hf.ko drivers/nfc/st95hf/st95hf.o drivers/nfc/st95hf/st95hf.mod.o .module-common.o

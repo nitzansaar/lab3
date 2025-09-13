@@ -1,0 +1,1 @@
+savedcmd_lib/test_blackhole_dev.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o lib/test_blackhole_dev.ko lib/test_blackhole_dev.o lib/test_blackhole_dev.mod.o .module-common.o

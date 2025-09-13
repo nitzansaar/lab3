@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/hw/efa/efa.mod := printf '%s\n'   efa_com_cmd.o efa_com.o efa_main.o efa_verbs.o | awk '!x[$$0]++ { print("drivers/infiniband/hw/efa/"$$0) }' > drivers/infiniband/hw/efa/efa.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/input/serio/ps2-gpio.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/serio/ps2-gpio.ko drivers/input/serio/ps2-gpio.o drivers/input/serio/ps2-gpio.mod.o .module-common.o

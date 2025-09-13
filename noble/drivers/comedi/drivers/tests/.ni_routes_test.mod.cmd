@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/tests/ni_routes_test.mod := printf '%s\n'   ni_routes_test.o | awk '!x[$$0]++ { print("drivers/comedi/drivers/tests/"$$0) }' > drivers/comedi/drivers/tests/ni_routes_test.mod

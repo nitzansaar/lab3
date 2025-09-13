@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/flash/modules.order := {   echo drivers/leds/flash/leds-mt6370-flash.o;   echo drivers/leds/flash/leds-as3645a.o;   echo drivers/leds/flash/leds-lm3601x.o;   echo drivers/leds/flash/leds-sgm3140.o; :; } > drivers/leds/flash/modules.order

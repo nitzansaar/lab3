@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/most/modules.order := {   cat drivers/staging/most/net/modules.order;   cat drivers/staging/most/video/modules.order;   cat drivers/staging/most/i2c/modules.order; :; } > drivers/staging/most/modules.order

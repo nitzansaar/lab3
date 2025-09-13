@@ -1,0 +1,1 @@
+savedcmd_drivers/clk/clk-lmk04832.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/clk/clk-lmk04832.ko drivers/clk/clk-lmk04832.o drivers/clk/clk-lmk04832.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/net/pse-pd/pse_regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/pse-pd/pse_regulator.ko drivers/net/pse-pd/pse_regulator.o drivers/net/pse-pd/pse_regulator.mod.o .module-common.o

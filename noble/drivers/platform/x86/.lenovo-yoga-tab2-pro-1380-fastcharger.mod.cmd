@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/lenovo-yoga-tab2-pro-1380-fastcharger.mod := printf '%s\n'   lenovo-yoga-tab2-pro-1380-fastcharger.o | awk '!x[$$0]++ { print("drivers/platform/x86/"$$0) }' > drivers/platform/x86/lenovo-yoga-tab2-pro-1380-fastcharger.mod

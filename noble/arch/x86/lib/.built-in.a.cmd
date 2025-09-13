@@ -1,0 +1,1 @@
+savedcmd_arch/x86/lib/built-in.a := rm -f arch/x86/lib/built-in.a;  printf "arch/x86/lib/%s " msr-smp.o cache-smp.o crc32-glue.o crc32-pclmul.o crc32c-3way.o crc-t10dif-glue.o crct10dif-pcl-asm_64.o msr.o msr-reg.o msr-reg-export.o hweight.o iomem.o | xargs ar cDPrST arch/x86/lib/built-in.a

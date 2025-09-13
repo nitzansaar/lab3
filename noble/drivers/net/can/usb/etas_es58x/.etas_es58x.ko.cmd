@@ -1,0 +1,1 @@
+savedcmd_drivers/net/can/usb/etas_es58x/etas_es58x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/can/usb/etas_es58x/etas_es58x.ko drivers/net/can/usb/etas_es58x/etas_es58x.o drivers/net/can/usb/etas_es58x/etas_es58x.mod.o .module-common.o

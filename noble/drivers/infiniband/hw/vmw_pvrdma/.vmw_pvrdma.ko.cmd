@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.ko drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.o drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.mod.o .module-common.o

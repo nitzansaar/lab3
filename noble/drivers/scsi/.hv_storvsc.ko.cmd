@@ -1,0 +1,1 @@
+savedcmd_drivers/scsi/hv_storvsc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/scsi/hv_storvsc.ko drivers/scsi/hv_storvsc.o drivers/scsi/hv_storvsc.mod.o .module-common.o

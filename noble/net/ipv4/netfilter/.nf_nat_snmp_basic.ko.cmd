@@ -1,0 +1,1 @@
+savedcmd_netfilter/nf_nat_snmp_basic.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o netfilter/nf_nat_snmp_basic.ko netfilter/nf_nat_snmp_basic.o netfilter/nf_nat_snmp_basic.mod.o .module-common.o

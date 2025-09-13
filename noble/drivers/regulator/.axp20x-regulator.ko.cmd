@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/axp20x-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/axp20x-regulator.ko drivers/regulator/axp20x-regulator.o drivers/regulator/axp20x-regulator.mod.o .module-common.o

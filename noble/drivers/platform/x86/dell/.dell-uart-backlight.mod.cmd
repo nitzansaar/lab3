@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/dell/dell-uart-backlight.mod := printf '%s\n'   dell-uart-backlight.o | awk '!x[$$0]++ { print("drivers/platform/x86/dell/"$$0) }' > drivers/platform/x86/dell/dell-uart-backlight.mod

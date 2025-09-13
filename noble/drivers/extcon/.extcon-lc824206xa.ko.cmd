@@ -1,0 +1,1 @@
+savedcmd_drivers/extcon/extcon-lc824206xa.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/extcon/extcon-lc824206xa.ko drivers/extcon/extcon-lc824206xa.o drivers/extcon/extcon-lc824206xa.mod.o .module-common.o

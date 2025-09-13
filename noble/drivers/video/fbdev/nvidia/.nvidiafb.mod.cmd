@@ -1,0 +1,1 @@
+savedcmd_drivers/video/fbdev/nvidia/nvidiafb.mod := printf '%s\n'   nvidia.o nv_hw.o nv_setup.o nv_accel.o nv_of.o nv_i2c.o nv_backlight.o nvidia.o nv_hw.o nv_setup.o nv_accel.o nv_of.o nv_i2c.o nv_backlight.o | awk '!x[$$0]++ { print("drivers/video/fbdev/nvidia/"$$0) }' > drivers/video/fbdev/nvidia/nvidiafb.mod

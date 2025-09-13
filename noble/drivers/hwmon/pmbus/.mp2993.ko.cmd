@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/pmbus/mp2993.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/pmbus/mp2993.ko drivers/hwmon/pmbus/mp2993.o drivers/hwmon/pmbus/mp2993.mod.o .module-common.o

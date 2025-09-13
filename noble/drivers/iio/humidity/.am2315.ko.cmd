@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/humidity/am2315.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/humidity/am2315.ko drivers/iio/humidity/am2315.o drivers/iio/humidity/am2315.mod.o .module-common.o

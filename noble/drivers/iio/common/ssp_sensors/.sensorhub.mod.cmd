@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/common/ssp_sensors/sensorhub.mod := printf '%s\n'   ssp_dev.o ssp_spi.o | awk '!x[$$0]++ { print("drivers/iio/common/ssp_sensors/"$$0) }' > drivers/iio/common/ssp_sensors/sensorhub.mod

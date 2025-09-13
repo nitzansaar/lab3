@@ -1,0 +1,1 @@
+savedcmd_drivers/input/touchscreen/rohm_bu21023.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/touchscreen/rohm_bu21023.ko drivers/input/touchscreen/rohm_bu21023.o drivers/input/touchscreen/rohm_bu21023.mod.o .module-common.o

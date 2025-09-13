@@ -1,0 +1,1 @@
+savedcmd_drivers/tty/serial/8250/8250_pericom.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/tty/serial/8250/8250_pericom.ko drivers/tty/serial/8250/8250_pericom.o drivers/tty/serial/8250/8250_pericom.mod.o .module-common.o

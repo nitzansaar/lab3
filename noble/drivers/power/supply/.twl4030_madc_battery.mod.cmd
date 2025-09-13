@@ -1,0 +1,1 @@
+savedcmd_drivers/power/supply/twl4030_madc_battery.mod := printf '%s\n'   twl4030_madc_battery.o | awk '!x[$$0]++ { print("drivers/power/supply/"$$0) }' > drivers/power/supply/twl4030_madc_battery.mod

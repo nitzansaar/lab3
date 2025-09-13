@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/ii_pci20kc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/comedi/drivers/ii_pci20kc.ko drivers/comedi/drivers/ii_pci20kc.o drivers/comedi/drivers/ii_pci20kc.mod.o .module-common.o

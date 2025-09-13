@@ -1,0 +1,1 @@
+savedcmd_drivers/vfio/pci/virtio/virtio-vfio-pci.mod := printf '%s\n'   main.o migrate.o legacy_io.o | awk '!x[$$0]++ { print("drivers/vfio/pci/virtio/"$$0) }' > drivers/vfio/pci/virtio/virtio-vfio-pci.mod

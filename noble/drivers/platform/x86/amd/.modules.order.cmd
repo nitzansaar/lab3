@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/amd/modules.order := {   echo drivers/platform/x86/amd/amd_3d_vcache.o;   cat drivers/platform/x86/amd/hsmp/modules.order;   cat drivers/platform/x86/amd/pmf/modules.order; :; } > drivers/platform/x86/amd/modules.order

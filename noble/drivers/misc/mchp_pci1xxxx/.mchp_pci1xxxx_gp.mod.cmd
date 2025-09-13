@@ -1,0 +1,1 @@
+savedcmd_drivers/misc/mchp_pci1xxxx/mchp_pci1xxxx_gp.mod := printf '%s\n'   mchp_pci1xxxx_gp.o | awk '!x[$$0]++ { print("drivers/misc/mchp_pci1xxxx/"$$0) }' > drivers/misc/mchp_pci1xxxx/mchp_pci1xxxx_gp.mod

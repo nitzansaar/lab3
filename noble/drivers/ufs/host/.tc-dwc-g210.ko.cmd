@@ -1,0 +1,1 @@
+savedcmd_drivers/ufs/host/tc-dwc-g210.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/ufs/host/tc-dwc-g210.ko drivers/ufs/host/tc-dwc-g210.o drivers/ufs/host/tc-dwc-g210.mod.o .module-common.o

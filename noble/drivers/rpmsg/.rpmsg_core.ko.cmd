@@ -1,0 +1,1 @@
+savedcmd_drivers/rpmsg/rpmsg_core.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/rpmsg/rpmsg_core.ko drivers/rpmsg/rpmsg_core.o drivers/rpmsg/rpmsg_core.mod.o .module-common.o

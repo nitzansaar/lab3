@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/isl6271a-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/isl6271a-regulator.ko drivers/regulator/isl6271a-regulator.o drivers/regulator/isl6271a-regulator.mod.o .module-common.o

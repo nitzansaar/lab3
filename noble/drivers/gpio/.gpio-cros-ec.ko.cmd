@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-cros-ec.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-cros-ec.ko drivers/gpio/gpio-cros-ec.o drivers/gpio/gpio-cros-ec.mod.o .module-common.o

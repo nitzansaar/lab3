@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/typec/altmodes/typec_thunderbolt.mod := printf '%s\n'   thunderbolt.o | awk '!x[$$0]++ { print("drivers/usb/typec/altmodes/"$$0) }' > drivers/usb/typec/altmodes/typec_thunderbolt.mod

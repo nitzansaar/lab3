@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/synopsys/dwc-xlgmac.mod := printf '%s\n'   dwc-xlgmac-net.o dwc-xlgmac-desc.o dwc-xlgmac-hw.o dwc-xlgmac-common.o dwc-xlgmac-ethtool.o dwc-xlgmac-pci.o | awk '!x[$$0]++ { print("drivers/net/ethernet/synopsys/"$$0) }' > drivers/net/ethernet/synopsys/dwc-xlgmac.mod

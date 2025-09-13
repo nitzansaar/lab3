@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/vme_user/vme_fake.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/vme_user/vme_fake.ko drivers/staging/vme_user/vme_fake.o drivers/staging/vme_user/vme_fake.mod.o .module-common.o

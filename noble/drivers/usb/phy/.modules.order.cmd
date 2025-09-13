@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/phy/modules.order := {   echo drivers/usb/phy/phy-generic.o;   echo drivers/usb/phy/phy-tahvo.o;   echo drivers/usb/phy/phy-gpio-vbus-usb.o;   echo drivers/usb/phy/phy-isp1301.o; :; } > drivers/usb/phy/modules.order

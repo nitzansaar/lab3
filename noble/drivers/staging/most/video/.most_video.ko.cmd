@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/most/video/most_video.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/most/video/most_video.ko drivers/staging/most/video/most_video.o drivers/staging/most/video/most_video.mod.o .module-common.o

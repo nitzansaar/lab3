@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/amplifiers/modules.order := {   echo drivers/iio/amplifiers/ad8366.o;   echo drivers/iio/amplifiers/ada4250.o;   echo drivers/iio/amplifiers/hmc425a.o; :; } > drivers/iio/amplifiers/modules.order

@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-104-dio-48e.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-104-dio-48e.ko drivers/gpio/gpio-104-dio-48e.o drivers/gpio/gpio-104-dio-48e.mod.o .module-common.o

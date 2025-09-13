@@ -1,0 +1,1 @@
+savedcmd_drivers/media/cec/usb/extron-da-hd-4k-plus/extron-da-hd-4k-plus-cec.mod := printf '%s\n'   extron-da-hd-4k-plus.o cec-splitter.o | awk '!x[$$0]++ { print("drivers/media/cec/usb/extron-da-hd-4k-plus/"$$0) }' > drivers/media/cec/usb/extron-da-hd-4k-plus/extron-da-hd-4k-plus-cec.mod

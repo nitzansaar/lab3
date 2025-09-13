@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/amd/hsmp/modules.order := {   echo drivers/platform/x86/amd/hsmp/hsmp_common.o;   echo drivers/platform/x86/amd/hsmp/amd_hsmp.o;   echo drivers/platform/x86/amd/hsmp/hsmp_acpi.o; :; } > drivers/platform/x86/amd/hsmp/modules.order

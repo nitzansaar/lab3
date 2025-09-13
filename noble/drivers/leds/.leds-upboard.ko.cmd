@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/leds-upboard.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/leds/leds-upboard.ko drivers/leds/leds-upboard.o drivers/leds/leds-upboard.mod.o .module-common.o

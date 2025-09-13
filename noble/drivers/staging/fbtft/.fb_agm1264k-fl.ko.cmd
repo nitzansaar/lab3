@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/fbtft/fb_agm1264k-fl.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/staging/fbtft/fb_agm1264k-fl.ko drivers/staging/fbtft/fb_agm1264k-fl.o drivers/staging/fbtft/fb_agm1264k-fl.mod.o .module-common.o

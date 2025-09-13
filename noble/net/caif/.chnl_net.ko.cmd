@@ -1,0 +1,1 @@
+savedcmd_net/caif/chnl_net.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o net/caif/chnl_net.ko net/caif/chnl_net.o net/caif/chnl_net.mod.o .module-common.o

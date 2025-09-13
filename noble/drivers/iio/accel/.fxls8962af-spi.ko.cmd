@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/accel/fxls8962af-spi.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/accel/fxls8962af-spi.ko drivers/iio/accel/fxls8962af-spi.o drivers/iio/accel/fxls8962af-spi.mod.o .module-common.o

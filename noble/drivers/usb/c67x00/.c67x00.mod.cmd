@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/c67x00/c67x00.mod := printf '%s\n'   c67x00-drv.o c67x00-ll-hpi.o c67x00-hcd.o c67x00-sched.o | awk '!x[$$0]++ { print("drivers/usb/c67x00/"$$0) }' > drivers/usb/c67x00/c67x00.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/flash/leds-mt6370-flash.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/leds/flash/leds-mt6370-flash.ko drivers/leds/flash/leds-mt6370-flash.o drivers/leds/flash/leds-mt6370-flash.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_samples/ftrace/ftrace-direct.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o samples/ftrace/ftrace-direct.ko samples/ftrace/ftrace-direct.o samples/ftrace/ftrace-direct.mod.o .module-common.o

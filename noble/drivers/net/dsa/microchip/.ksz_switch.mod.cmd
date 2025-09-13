@@ -1,0 +1,1 @@
+savedcmd_drivers/net/dsa/microchip/ksz_switch.mod := printf '%s\n'   ksz_common.o ksz_dcb.o ksz9477.o ksz9477_acl.o ksz9477_tc_flower.o ksz8.o lan937x_main.o ksz_ptp.o | awk '!x[$$0]++ { print("drivers/net/dsa/microchip/"$$0) }' > drivers/net/dsa/microchip/ksz_switch.mod

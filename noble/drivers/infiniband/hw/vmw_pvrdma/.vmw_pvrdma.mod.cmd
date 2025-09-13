@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.mod := printf '%s\n'   pvrdma_cmd.o pvrdma_cq.o pvrdma_doorbell.o pvrdma_main.o pvrdma_misc.o pvrdma_mr.o pvrdma_qp.o pvrdma_srq.o pvrdma_verbs.o | awk '!x[$$0]++ { print("drivers/infiniband/hw/vmw_pvrdma/"$$0) }' > drivers/infiniband/hw/vmw_pvrdma/vmw_pvrdma.mod

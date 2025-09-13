@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-dwapb.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-dwapb.ko drivers/gpio/gpio-dwapb.o drivers/gpio/gpio-dwapb.mod.o .module-common.o

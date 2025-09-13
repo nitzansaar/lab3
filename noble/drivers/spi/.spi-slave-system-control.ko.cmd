@@ -1,0 +1,1 @@
+savedcmd_drivers/spi/spi-slave-system-control.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/spi/spi-slave-system-control.ko drivers/spi/spi-slave-system-control.o drivers/spi/spi-slave-system-control.mod.o .module-common.o

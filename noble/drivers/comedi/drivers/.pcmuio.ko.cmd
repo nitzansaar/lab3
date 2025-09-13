@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/pcmuio.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/comedi/drivers/pcmuio.ko drivers/comedi/drivers/pcmuio.o drivers/comedi/drivers/pcmuio.mod.o .module-common.o

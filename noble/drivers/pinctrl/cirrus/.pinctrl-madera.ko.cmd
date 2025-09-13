@@ -1,0 +1,1 @@
+savedcmd_drivers/pinctrl/cirrus/pinctrl-madera.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/pinctrl/cirrus/pinctrl-madera.ko drivers/pinctrl/cirrus/pinctrl-madera.o drivers/pinctrl/cirrus/pinctrl-madera.mod.o .module-common.o

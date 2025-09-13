@@ -1,0 +1,1 @@
+savedcmd_drivers/input/misc/pcf50633-input.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/misc/pcf50633-input.ko drivers/input/misc/pcf50633-input.o drivers/input/misc/pcf50633-input.mod.o .module-common.o

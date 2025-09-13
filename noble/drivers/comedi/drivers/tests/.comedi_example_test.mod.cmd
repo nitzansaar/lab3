@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/tests/comedi_example_test.mod := printf '%s\n'   comedi_example_test.o | awk '!x[$$0]++ { print("drivers/comedi/drivers/tests/"$$0) }' > drivers/comedi/drivers/tests/comedi_example_test.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/net/phy/marvell-88q2xxx.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/phy/marvell-88q2xxx.ko drivers/net/phy/marvell-88q2xxx.o drivers/net/phy/marvell-88q2xxx.mod.o .module-common.o

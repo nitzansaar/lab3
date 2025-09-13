@@ -1,0 +1,1 @@
+savedcmd_drivers/vdpa/mlx5/mlx5_vdpa.mod := printf '%s\n'   net/mlx5_vnet.o core/resources.o core/mr.o net/debug.o | awk '!x[$$0]++ { print("drivers/vdpa/mlx5/"$$0) }' > drivers/vdpa/mlx5/mlx5_vdpa.mod

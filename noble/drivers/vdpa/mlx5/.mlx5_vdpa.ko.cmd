@@ -1,0 +1,1 @@
+savedcmd_drivers/vdpa/mlx5/mlx5_vdpa.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/vdpa/mlx5/mlx5_vdpa.ko drivers/vdpa/mlx5/mlx5_vdpa.o drivers/vdpa/mlx5/mlx5_vdpa.mod.o .module-common.o

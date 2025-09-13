@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/88pm800.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/88pm800.ko drivers/mfd/88pm800.o drivers/mfd/88pm800.mod.o .module-common.o

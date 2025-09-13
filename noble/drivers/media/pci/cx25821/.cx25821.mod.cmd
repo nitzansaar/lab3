@@ -1,0 +1,1 @@
+savedcmd_drivers/media/pci/cx25821/cx25821.mod := printf '%s\n'   cx25821-core.o cx25821-cards.o cx25821-i2c.o cx25821-gpio.o cx25821-medusa-video.o cx25821-video.o | awk '!x[$$0]++ { print("drivers/media/pci/cx25821/"$$0) }' > drivers/media/pci/cx25821/cx25821.mod

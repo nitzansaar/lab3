@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/trigger/ledtrig-input-events.mod := printf '%s\n'   ledtrig-input-events.o | awk '!x[$$0]++ { print("drivers/leds/trigger/"$$0) }' > drivers/leds/trigger/ledtrig-input-events.mod

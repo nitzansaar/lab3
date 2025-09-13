@@ -1,0 +1,1 @@
+savedcmd_drivers/pinctrl/cirrus/pinctrl-madera.mod := printf '%s\n'   pinctrl-madera-core.o pinctrl-cs47l15.o pinctrl-cs47l35.o pinctrl-cs47l85.o pinctrl-cs47l90.o pinctrl-cs47l92.o | awk '!x[$$0]++ { print("drivers/pinctrl/cirrus/"$$0) }' > drivers/pinctrl/cirrus/pinctrl-madera.mod

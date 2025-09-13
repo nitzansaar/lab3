@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/health/afe4404.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/health/afe4404.ko drivers/iio/health/afe4404.o drivers/iio/health/afe4404.mod.o .module-common.o

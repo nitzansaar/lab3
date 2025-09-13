@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/mellanox/modules.order := {   echo drivers/platform/mellanox/mlxreg-hotplug.o;   echo drivers/platform/mellanox/mlxreg-io.o;   echo drivers/platform/mellanox/mlxreg-lc.o;   echo drivers/platform/mellanox/nvsw-sn2201.o; :; } > drivers/platform/mellanox/modules.order

@@ -1,0 +1,1 @@
+savedcmd_drivers/vfio/pci/pds/pds-vfio-pci.mod := printf '%s\n'   cmds.o dirty.o lm.o pci_drv.o vfio_dev.o | awk '!x[$$0]++ { print("drivers/vfio/pci/pds/"$$0) }' > drivers/vfio/pci/pds/pds-vfio-pci.mod

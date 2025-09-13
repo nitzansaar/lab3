@@ -1,0 +1,1 @@
+savedcmd_drivers/accel/qaic/qaic.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/accel/qaic/qaic.ko drivers/accel/qaic/qaic.o drivers/accel/qaic/qaic.mod.o .module-common.o

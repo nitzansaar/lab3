@@ -1,0 +1,1 @@
+savedcmd_drivers/input/touchscreen/88pm860x-ts.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/touchscreen/88pm860x-ts.ko drivers/input/touchscreen/88pm860x-ts.o drivers/input/touchscreen/88pm860x-ts.mod.o .module-common.o

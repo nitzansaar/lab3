@@ -1,0 +1,1 @@
+savedcmd_drivers/vfio/pci/modules.order := {   echo drivers/vfio/pci/vfio-pci-core.o;   echo drivers/vfio/pci/vfio-pci.o;   cat drivers/vfio/pci/mlx5/modules.order;   cat drivers/vfio/pci/pds/modules.order;   cat drivers/vfio/pci/virtio/modules.order;   cat drivers/vfio/pci/qat/modules.order; :; } > drivers/vfio/pci/modules.order

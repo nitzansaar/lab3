@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/chemical/scd4x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/chemical/scd4x.ko drivers/iio/chemical/scd4x.o drivers/iio/chemical/scd4x.mod.o .module-common.o

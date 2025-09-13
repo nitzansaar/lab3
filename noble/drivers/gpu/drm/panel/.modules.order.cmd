@@ -1,0 +1,1 @@
+savedcmd_drivers/gpu/drm/panel/modules.order := {   echo drivers/gpu/drm/panel/panel-auo-a030jtn01.o;   echo drivers/gpu/drm/panel/panel-ilitek-ili9341.o;   echo drivers/gpu/drm/panel/panel-orisetech-ota5601a.o;   echo drivers/gpu/drm/panel/panel-raspberrypi-touchscreen.o;   echo drivers/gpu/drm/panel/panel-widechips-ws2401.o; :; } > drivers/gpu/drm/panel/modules.order

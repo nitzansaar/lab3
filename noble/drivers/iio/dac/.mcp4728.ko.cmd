@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/dac/mcp4728.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/dac/mcp4728.ko drivers/iio/dac/mcp4728.o drivers/iio/dac/mcp4728.mod.o .module-common.o

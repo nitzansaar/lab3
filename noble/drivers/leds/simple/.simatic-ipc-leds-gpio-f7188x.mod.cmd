@@ -1,0 +1,1 @@
+savedcmd_drivers/leds/simple/simatic-ipc-leds-gpio-f7188x.mod := printf '%s\n'   simatic-ipc-leds-gpio-f7188x.o | awk '!x[$$0]++ { print("drivers/leds/simple/"$$0) }' > drivers/leds/simple/simatic-ipc-leds-gpio-f7188x.mod

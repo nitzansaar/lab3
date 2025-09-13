@@ -1,0 +1,1 @@
+savedcmd_drivers/i3c/master/dw-i3c-master.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/i3c/master/dw-i3c-master.ko drivers/i3c/master/dw-i3c-master.o drivers/i3c/master/dw-i3c-master.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/hid/intel-thc-hid/intel-quicki2c.mod := printf '%s\n'   intel-quicki2c/pci-quicki2c.o intel-quicki2c/quicki2c-hid.o intel-quicki2c/quicki2c-protocol.o | awk '!x[$$0]++ { print("drivers/hid/intel-thc-hid/"$$0) }' > drivers/hid/intel-thc-hid/intel-quicki2c.mod

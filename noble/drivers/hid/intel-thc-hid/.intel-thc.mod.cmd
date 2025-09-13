@@ -1,0 +1,1 @@
+savedcmd_drivers/hid/intel-thc-hid/intel-thc.mod := printf '%s\n'   intel-thc/intel-thc-dev.o intel-thc/intel-thc-dma.o | awk '!x[$$0]++ { print("drivers/hid/intel-thc-hid/"$$0) }' > drivers/hid/intel-thc-hid/intel-thc.mod

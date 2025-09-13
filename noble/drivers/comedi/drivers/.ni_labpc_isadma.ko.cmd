@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/ni_labpc_isadma.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/comedi/drivers/ni_labpc_isadma.ko drivers/comedi/drivers/ni_labpc_isadma.o drivers/comedi/drivers/ni_labpc_isadma.mod.o .module-common.o

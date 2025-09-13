@@ -1,0 +1,1 @@
+savedcmd_drivers/staging/vme_user/modules.order := {   echo drivers/staging/vme_user/vme_user.o;   echo drivers/staging/vme_user/vme_tsi148.o;   echo drivers/staging/vme_user/vme_fake.o; :; } > drivers/staging/vme_user/modules.order

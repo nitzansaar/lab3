@@ -1,0 +1,1 @@
+savedcmd_drivers/mtd/hyperbus/hyperbus-core.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mtd/hyperbus/hyperbus-core.ko drivers/mtd/hyperbus/hyperbus-core.o drivers/mtd/hyperbus/hyperbus-core.mod.o .module-common.o

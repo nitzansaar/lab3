@@ -1,0 +1,1 @@
+savedcmd_drivers/video/backlight/ili9320.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/video/backlight/ili9320.ko drivers/video/backlight/ili9320.o drivers/video/backlight/ili9320.mod.o .module-common.o

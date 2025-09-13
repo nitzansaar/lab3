@@ -1,0 +1,1 @@
+savedcmd_drivers/video/fbdev/riva/rivafb.mod := printf '%s\n'   fbdev.o riva_hw.o nv_driver.o rivafb-i2c.o | awk '!x[$$0]++ { print("drivers/video/fbdev/riva/"$$0) }' > drivers/video/fbdev/riva/rivafb.mod

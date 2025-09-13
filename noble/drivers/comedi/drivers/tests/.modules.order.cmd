@@ -1,0 +1,1 @@
+savedcmd_drivers/comedi/drivers/tests/modules.order := {   echo drivers/comedi/drivers/tests/comedi_example_test.o;   echo drivers/comedi/drivers/tests/ni_routes_test.o; :; } > drivers/comedi/drivers/tests/modules.order

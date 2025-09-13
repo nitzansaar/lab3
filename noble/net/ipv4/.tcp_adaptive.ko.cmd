@@ -1,0 +1,1 @@
+savedcmd_tcp_adaptive.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/ubuntu/noble/scripts/module.lds -o tcp_adaptive.ko tcp_adaptive.o tcp_adaptive.mod.o .module-common.o

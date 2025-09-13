@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/microsoft/mana/mana.mod := printf '%s\n'   gdma_main.o shm_channel.o hw_channel.o mana_en.o mana_ethtool.o mana_bpf.o | awk '!x[$$0]++ { print("drivers/net/ethernet/microsoft/mana/"$$0) }' > drivers/net/ethernet/microsoft/mana/mana.mod

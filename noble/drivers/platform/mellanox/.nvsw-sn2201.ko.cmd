@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/mellanox/nvsw-sn2201.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/platform/mellanox/nvsw-sn2201.ko drivers/platform/mellanox/nvsw-sn2201.o drivers/platform/mellanox/nvsw-sn2201.mod.o .module-common.o

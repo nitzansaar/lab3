@@ -1,0 +1,1 @@
+savedcmd_drivers/thermal/thermal-generic-adc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/thermal/thermal-generic-adc.ko drivers/thermal/thermal-generic-adc.o drivers/thermal/thermal-generic-adc.mod.o .module-common.o

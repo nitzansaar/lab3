@@ -1,0 +1,1 @@
+savedcmd_drivers/net/pse-pd/modules.order := {   echo drivers/net/pse-pd/pse_regulator.o;   echo drivers/net/pse-pd/pd692x0.o;   echo drivers/net/pse-pd/tps23881.o; :; } > drivers/net/pse-pd/modules.order

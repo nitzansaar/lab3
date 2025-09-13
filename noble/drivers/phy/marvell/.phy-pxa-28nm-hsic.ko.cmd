@@ -1,0 +1,1 @@
+savedcmd_drivers/phy/marvell/phy-pxa-28nm-hsic.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/phy/marvell/phy-pxa-28nm-hsic.ko drivers/phy/marvell/phy-pxa-28nm-hsic.o drivers/phy/marvell/phy-pxa-28nm-hsic.mod.o .module-common.o

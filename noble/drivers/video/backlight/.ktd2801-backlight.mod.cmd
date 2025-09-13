@@ -1,0 +1,1 @@
+savedcmd_drivers/video/backlight/ktd2801-backlight.mod := printf '%s\n'   ktd2801-backlight.o | awk '!x[$$0]++ { print("drivers/video/backlight/"$$0) }' > drivers/video/backlight/ktd2801-backlight.mod

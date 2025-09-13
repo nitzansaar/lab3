@@ -1,0 +1,1 @@
+savedcmd_drivers/dma/amd/ptdma/ptdma.mod := printf '%s\n'   ptdma-dev.o ptdma-dmaengine.o ptdma-debugfs.o ptdma-pci.o | awk '!x[$$0]++ { print("drivers/dma/amd/ptdma/"$$0) }' > drivers/dma/amd/ptdma/ptdma.mod

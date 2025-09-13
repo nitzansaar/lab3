@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/dev-sync-probe.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/dev-sync-probe.ko drivers/gpio/dev-sync-probe.o drivers/gpio/dev-sync-probe.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/samsung/sxgbe/samsung-sxgbe.mod := printf '%s\n'   sxgbe_platform.o sxgbe_main.o sxgbe_desc.o sxgbe_dma.o sxgbe_core.o sxgbe_mtl.o sxgbe_mdio.o sxgbe_ethtool.o | awk '!x[$$0]++ { print("drivers/net/ethernet/samsung/sxgbe/"$$0) }' > drivers/net/ethernet/samsung/sxgbe/samsung-sxgbe.mod

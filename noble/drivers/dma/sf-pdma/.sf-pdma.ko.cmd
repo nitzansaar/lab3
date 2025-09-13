@@ -1,0 +1,1 @@
+savedcmd_drivers/dma/sf-pdma/sf-pdma.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/dma/sf-pdma/sf-pdma.ko drivers/dma/sf-pdma/sf-pdma.o drivers/dma/sf-pdma/sf-pdma.mod.o .module-common.o

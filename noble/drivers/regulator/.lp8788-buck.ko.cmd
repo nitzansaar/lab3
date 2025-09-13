@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/lp8788-buck.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/lp8788-buck.ko drivers/regulator/lp8788-buck.o drivers/regulator/lp8788-buck.mod.o .module-common.o

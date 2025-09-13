@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-sch311x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-sch311x.ko drivers/gpio/gpio-sch311x.o drivers/gpio/gpio-sch311x.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/gadget/udc/cdns2/cdns2-udc-pci.mod := printf '%s\n'   cdns2-trace.o cdns2-pci.o cdns2-gadget.o cdns2-ep0.o | awk '!x[$$0]++ { print("drivers/usb/gadget/udc/cdns2/"$$0) }' > drivers/usb/gadget/udc/cdns2/cdns2-udc-pci.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/ata/pata_parport/ktti.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/ata/pata_parport/ktti.ko drivers/ata/pata_parport/ktti.o drivers/ata/pata_parport/ktti.mod.o .module-common.o

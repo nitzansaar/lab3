@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/micrel/modules.order := {   echo drivers/net/ethernet/micrel/ks8842.o;   echo drivers/net/ethernet/micrel/ks8851_common.o;   echo drivers/net/ethernet/micrel/ks8851_spi.o;   echo drivers/net/ethernet/micrel/ks8851_par.o;   echo drivers/net/ethernet/micrel/ksz884x.o; :; } > drivers/net/ethernet/micrel/modules.order

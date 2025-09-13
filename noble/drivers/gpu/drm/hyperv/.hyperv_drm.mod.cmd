@@ -1,0 +1,1 @@
+savedcmd_drivers/gpu/drm/hyperv/hyperv_drm.mod := printf '%s\n'   hyperv_drm_drv.o hyperv_drm_modeset.o hyperv_drm_proto.o | awk '!x[$$0]++ { print("drivers/gpu/drm/hyperv/"$$0) }' > drivers/gpu/drm/hyperv/hyperv_drm.mod

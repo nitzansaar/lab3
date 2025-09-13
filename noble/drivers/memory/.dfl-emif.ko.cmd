@@ -1,0 +1,1 @@
+savedcmd_drivers/memory/dfl-emif.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/memory/dfl-emif.ko drivers/memory/dfl-emif.o drivers/memory/dfl-emif.mod.o .module-common.o

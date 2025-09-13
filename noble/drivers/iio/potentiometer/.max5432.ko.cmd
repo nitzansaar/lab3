@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/potentiometer/max5432.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/potentiometer/max5432.ko drivers/iio/potentiometer/max5432.o drivers/iio/potentiometer/max5432.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/bcm590xx.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/bcm590xx.ko drivers/mfd/bcm590xx.o drivers/mfd/bcm590xx.mod.o .module-common.o

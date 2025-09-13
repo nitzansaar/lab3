@@ -1,0 +1,1 @@
+savedcmd_drivers/accel/modules.order := {   cat drivers/accel/amdxdna/modules.order;   cat drivers/accel/habanalabs/modules.order;   cat drivers/accel/ivpu/modules.order;   cat drivers/accel/qaic/modules.order; :; } > drivers/accel/modules.order

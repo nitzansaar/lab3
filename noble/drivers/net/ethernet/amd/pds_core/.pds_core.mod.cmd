@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/amd/pds_core/pds_core.mod := printf '%s\n'   main.o devlink.o auxbus.o dev.o adminq.o core.o debugfs.o fw.o | awk '!x[$$0]++ { print("drivers/net/ethernet/amd/pds_core/"$$0) }' > drivers/net/ethernet/amd/pds_core/pds_core.mod

@@ -1,0 +1,1 @@
+savedcmd_drivers/rapidio/modules.order := {   cat drivers/rapidio/switches/modules.order;   cat drivers/rapidio/devices/modules.order;   echo drivers/rapidio/rio-scan.o;   echo drivers/rapidio/rio_cm.o; :; } > drivers/rapidio/modules.order

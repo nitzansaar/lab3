@@ -1,0 +1,1 @@
+savedcmd_drivers/soc/qcom/pmic_pdcharger_ulog.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/soc/qcom/pmic_pdcharger_ulog.ko drivers/soc/qcom/pmic_pdcharger_ulog.o drivers/soc/qcom/pmic_pdcharger_ulog.mod.o .module-common.o

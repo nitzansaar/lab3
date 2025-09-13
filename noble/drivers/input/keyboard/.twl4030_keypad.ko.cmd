@@ -1,0 +1,1 @@
+savedcmd_drivers/input/keyboard/twl4030_keypad.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/input/keyboard/twl4030_keypad.ko drivers/input/keyboard/twl4030_keypad.o drivers/input/keyboard/twl4030_keypad.mod.o .module-common.o

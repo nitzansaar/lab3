@@ -1,0 +1,1 @@
+savedcmd_drivers/misc/sgi-gru/gru.mod := printf '%s\n'   grufile.o grumain.o grufault.o grutlbpurge.o gruprocfs.o grukservices.o gruhandles.o grukdump.o | awk '!x[$$0]++ { print("drivers/misc/sgi-gru/"$$0) }' > drivers/misc/sgi-gru/gru.mod

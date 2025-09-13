@@ -1,0 +1,1 @@
+savedcmd_drivers/crypto/cavium/nitrox/n5pf.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/crypto/cavium/nitrox/n5pf.ko drivers/crypto/cavium/nitrox/n5pf.o drivers/crypto/cavium/nitrox/n5pf.mod.o .module-common.o

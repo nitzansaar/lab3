@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/raa215300.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/raa215300.ko drivers/regulator/raa215300.o drivers/regulator/raa215300.mod.o .module-common.o

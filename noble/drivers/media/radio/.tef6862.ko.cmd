@@ -1,0 +1,1 @@
+savedcmd_drivers/media/radio/tef6862.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/media/radio/tef6862.ko drivers/media/radio/tef6862.o drivers/media/radio/tef6862.mod.o .module-common.o

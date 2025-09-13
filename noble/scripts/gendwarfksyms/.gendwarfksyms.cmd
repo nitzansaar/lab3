@@ -1,0 +1,1 @@
+savedcmd_scripts/gendwarfksyms/gendwarfksyms := gcc   -o scripts/gendwarfksyms/gendwarfksyms scripts/gendwarfksyms/gendwarfksyms.o scripts/gendwarfksyms/cache.o scripts/gendwarfksyms/die.o scripts/gendwarfksyms/dwarf.o scripts/gendwarfksyms/kabi.o scripts/gendwarfksyms/symbols.o scripts/gendwarfksyms/types.o   -ldw -lelf -lz

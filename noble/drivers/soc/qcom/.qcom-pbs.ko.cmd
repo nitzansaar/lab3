@@ -1,0 +1,1 @@
+savedcmd_drivers/soc/qcom/qcom-pbs.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/soc/qcom/qcom-pbs.ko drivers/soc/qcom/qcom-pbs.o drivers/soc/qcom/qcom-pbs.mod.o .module-common.o

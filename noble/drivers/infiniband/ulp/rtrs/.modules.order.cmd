@@ -1,0 +1,1 @@
+savedcmd_drivers/infiniband/ulp/rtrs/modules.order := {   echo drivers/infiniband/ulp/rtrs/rtrs-core.o;   echo drivers/infiniband/ulp/rtrs/rtrs-client.o;   echo drivers/infiniband/ulp/rtrs/rtrs-server.o; :; } > drivers/infiniband/ulp/rtrs/modules.order

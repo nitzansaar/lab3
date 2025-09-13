@@ -1,0 +1,1 @@
+savedcmd_drivers/auxdisplay/img-ascii-lcd.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/auxdisplay/img-ascii-lcd.ko drivers/auxdisplay/img-ascii-lcd.o drivers/auxdisplay/img-ascii-lcd.mod.o .module-common.o

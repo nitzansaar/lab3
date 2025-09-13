@@ -1,0 +1,1 @@
+savedcmd_drivers/net/can/kvaser_pciefd.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/can/kvaser_pciefd.ko drivers/net/can/kvaser_pciefd.o drivers/net/can/kvaser_pciefd.mod.o .module-common.o

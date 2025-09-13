@@ -1,0 +1,1 @@
+savedcmd_drivers/net/phy/air_en8811h.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/net/phy/air_en8811h.ko drivers/net/phy/air_en8811h.o drivers/net/phy/air_en8811h.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/power/reset/atc260x-poweroff.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/power/reset/atc260x-poweroff.ko drivers/power/reset/atc260x-poweroff.o drivers/power/reset/atc260x-poweroff.mod.o .module-common.o

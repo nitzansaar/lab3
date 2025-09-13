@@ -1,0 +1,1 @@
+savedcmd_drivers/nfc/fdp/fdp.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/nfc/fdp/fdp.ko drivers/nfc/fdp/fdp.o drivers/nfc/fdp/fdp.mod.o .module-common.o

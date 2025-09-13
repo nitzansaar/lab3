@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/adc/gehc-pmc-adc.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/iio/adc/gehc-pmc-adc.ko drivers/iio/adc/gehc-pmc-adc.o drivers/iio/adc/gehc-pmc-adc.mod.o .module-common.o

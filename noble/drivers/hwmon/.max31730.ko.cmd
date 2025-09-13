@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/max31730.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/max31730.ko drivers/hwmon/max31730.o drivers/hwmon/max31730.mod.o .module-common.o

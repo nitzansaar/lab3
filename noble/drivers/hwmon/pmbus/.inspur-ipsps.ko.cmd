@@ -1,0 +1,1 @@
+savedcmd_drivers/hwmon/pmbus/inspur-ipsps.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/hwmon/pmbus/inspur-ipsps.ko drivers/hwmon/pmbus/inspur-ipsps.o drivers/hwmon/pmbus/inspur-ipsps.mod.o .module-common.o

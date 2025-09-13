@@ -1,0 +1,1 @@
+savedcmd_drivers/net/ethernet/microchip/encx24j600.mod := printf '%s\n'   encx24j600.o | awk '!x[$$0]++ { print("drivers/net/ethernet/microchip/"$$0) }' > drivers/net/ethernet/microchip/encx24j600.mod

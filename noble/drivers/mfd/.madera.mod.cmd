@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/madera.mod := printf '%s\n'   madera-core.o cs47l15-tables.o cs47l35-tables.o cs47l85-tables.o cs47l90-tables.o cs47l92-tables.o | awk '!x[$$0]++ { print("drivers/mfd/"$$0) }' > drivers/mfd/madera.mod

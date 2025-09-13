@@ -1,0 +1,1 @@
+savedcmd_drivers/dma/amd/modules.order := {   cat drivers/dma/amd/ae4dma/modules.order;   cat drivers/dma/amd/ptdma/modules.order;   cat drivers/dma/amd/qdma/modules.order; :; } > drivers/dma/amd/modules.order

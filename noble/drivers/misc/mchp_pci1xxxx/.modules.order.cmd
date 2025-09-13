@@ -1,0 +1,1 @@
+savedcmd_drivers/misc/mchp_pci1xxxx/modules.order := {   echo drivers/misc/mchp_pci1xxxx/mchp_pci1xxxx_gp.o;   echo drivers/misc/mchp_pci1xxxx/mchp_pci1xxxx_gpio.o;   echo drivers/misc/mchp_pci1xxxx/mchp_pci1xxxx_otpe2p.o; :; } > drivers/misc/mchp_pci1xxxx/modules.order

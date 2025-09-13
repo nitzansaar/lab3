@@ -1,0 +1,1 @@
+savedcmd_drivers/gpio/gpio-tangier.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/gpio/gpio-tangier.ko drivers/gpio/gpio-tangier.o drivers/gpio/gpio-tangier.mod.o .module-common.o

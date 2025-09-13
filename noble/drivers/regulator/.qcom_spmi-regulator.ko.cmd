@@ -1,0 +1,1 @@
+savedcmd_drivers/regulator/qcom_spmi-regulator.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/regulator/qcom_spmi-regulator.ko drivers/regulator/qcom_spmi-regulator.o drivers/regulator/qcom_spmi-regulator.mod.o .module-common.o

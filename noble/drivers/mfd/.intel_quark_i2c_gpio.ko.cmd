@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/intel_quark_i2c_gpio.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/intel_quark_i2c_gpio.ko drivers/mfd/intel_quark_i2c_gpio.o drivers/mfd/intel_quark_i2c_gpio.mod.o .module-common.o

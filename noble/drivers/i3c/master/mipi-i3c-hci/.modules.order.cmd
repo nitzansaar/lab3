@@ -1,0 +1,1 @@
+savedcmd_drivers/i3c/master/mipi-i3c-hci/modules.order := {   echo drivers/i3c/master/mipi-i3c-hci/mipi-i3c-hci.o;   echo drivers/i3c/master/mipi-i3c-hci/mipi-i3c-hci-pci.o; :; } > drivers/i3c/master/mipi-i3c-hci/modules.order

@@ -1,0 +1,1 @@
+savedcmd_drivers/crypto/inside-secure/crypto_safexcel.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/crypto/inside-secure/crypto_safexcel.ko drivers/crypto/inside-secure/crypto_safexcel.o drivers/crypto/inside-secure/crypto_safexcel.mod.o .module-common.o

@@ -1,0 +1,1 @@
+savedcmd_drivers/counter/modules.order := {   echo drivers/counter/counter.o;   echo drivers/counter/i8254.o;   echo drivers/counter/104-quad-8.o;   echo drivers/counter/interrupt-cnt.o;   echo drivers/counter/intel-qep.o; :; } > drivers/counter/modules.order

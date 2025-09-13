@@ -1,0 +1,1 @@
+savedcmd_drivers/platform/x86/quickstart.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/platform/x86/quickstart.ko drivers/platform/x86/quickstart.o drivers/platform/x86/quickstart.mod.o .module-common.o

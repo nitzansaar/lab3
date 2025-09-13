@@ -1,0 +1,1 @@
+savedcmd_drivers/mfd/cs40l50-core.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/mfd/cs40l50-core.ko drivers/mfd/cs40l50-core.o drivers/mfd/cs40l50-core.mod.o .module-common.o

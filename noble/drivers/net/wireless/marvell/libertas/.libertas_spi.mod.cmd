@@ -1,0 +1,1 @@
+savedcmd_drivers/net/wireless/marvell/libertas/libertas_spi.mod := printf '%s\n'   if_spi.o | awk '!x[$$0]++ { print("drivers/net/wireless/marvell/libertas/"$$0) }' > drivers/net/wireless/marvell/libertas/libertas_spi.mod

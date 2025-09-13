@@ -1,0 +1,1 @@
+savedcmd_drivers/iio/imu/st_lsm6dsx/modules.order := {   echo drivers/iio/imu/st_lsm6dsx/st_lsm6dsx.o;   echo drivers/iio/imu/st_lsm6dsx/st_lsm6dsx_i2c.o;   echo drivers/iio/imu/st_lsm6dsx/st_lsm6dsx_spi.o;   echo drivers/iio/imu/st_lsm6dsx/st_lsm6dsx_i3c.o; :; } > drivers/iio/imu/st_lsm6dsx/modules.order

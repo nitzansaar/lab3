@@ -1,0 +1,1 @@
+savedcmd_drivers/usb/typec/mux/ps883x.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T ./scripts/module.lds -o drivers/usb/typec/mux/ps883x.ko drivers/usb/typec/mux/ps883x.o drivers/usb/typec/mux/ps883x.mod.o .module-common.o
