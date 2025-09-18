@@ -130,9 +130,9 @@ struct bbr {
 #define CYCLE_LEN	8	/* number of phases in a pacing gain cycle */
 
 /* Window length of bw filter (in rounds): */
-static const int bbr_bw_rtts = CYCLE_LEN + 2;
+static const int bbr_bw_rtts = static const int bbr_bw_rtts = 40;
 /* Window length of min_rtt filter (in sec): */
-static const u32 bbr_min_rtt_win_sec = 10;
+static const u32 bbr_min_rtt_win_sec = 30;
 /* Minimum time (in ms) spent at bbr_cwnd_min_target in BBR_PROBE_RTT mode: */
 static const u32 bbr_probe_rtt_mode_ms = 200;
 /* Skip TSO below the following bandwidth (bits/sec): */
@@ -222,9 +222,10 @@ static u32 bbr_max_bw(const struct sock *sk)
 /* Return the estimated bandwidth of the path, in pkts/uS << BW_SCALE. */
 static u32 bbr_bw(const struct sock *sk)
 {
-	struct bbr *bbr = inet_csk_ca(sk);
+	// struct bbr *bbr = inet_csk_ca(sk);
 
-	return bbr->lt_use_bw ? bbr->lt_bw : bbr_max_bw(sk);
+	// return bbr->lt_use_bw ? bbr->lt_bw : bbr_max_bw(sk);
+	return bbr_max_bw(sk);
 }
 
 /* Return maximum extra acked in past k-2k round trips,
@@ -795,8 +796,11 @@ static void bbr_update_bw(struct sock *sk, const struct rate_sample *rs)
 	 * network rate no matter how long. We automatically leave this
 	 * phase when app writes faster than the network can deliver :)
 	 */
-	if (!rs->is_app_limited || bw >= bbr_max_bw(sk)) {
-		/* Incorporate new sample into our max bw filter. */
+	u32 curr_max = bbr_max_bw(sk);
+	
+	u32 near_max = (u32)(((u64)curr_max * 8) / 10);
+	
+	if (!rs->is_app_limited || bw >= curr_max || bw >= near_max) {	
 		minmax_running_max(&bbr->bw, bbr_bw_rtts, bbr->rtt_cnt, bw);
 	}
 }
@@ -998,9 +1002,7 @@ static void bbr_update_gains(struct sock *sk)
 		bbr->cwnd_gain	 = bbr_high_gain;	/* keep cwnd */
 		break;
 	case BBR_PROBE_BW:
-		bbr->pacing_gain = (bbr->lt_use_bw ?
-				    BBR_UNIT :
-				    bbr_pacing_gain[bbr->cycle_idx]);
+		bbr->pacing_gain = bbr_pacing_gain[bbr->cycle_idx];
 		bbr->cwnd_gain	 = bbr_cwnd_gain;
 		break;
 	case BBR_PROBE_RTT:
